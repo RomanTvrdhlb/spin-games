@@ -1,0 +1,11 @@
+.h2o-tabs-content{
+
+
+    &__box{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 20px;
+    }
+}

@@ -1,0 +1,21 @@
+footer{
+  padding-bottom: clamp(20px, 4.3764vw, 40px);
+}
+
+.h2o-footer{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(25px, 4.9234vw, 45px);
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 50%;
+    top: 0;
+    background: #41618C;
+    height: 1px;
+    transform: translateX(-50%);
+  }
+}

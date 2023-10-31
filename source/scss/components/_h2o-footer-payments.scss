@@ -1,0 +1,17 @@
+.h2o-footer-payments{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: clamp(17px, 3.0635vw, 28px);
+    overflow: hidden;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    &__item{
+        display: flex;
+    }
+}

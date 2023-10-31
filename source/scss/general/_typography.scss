@@ -1,0 +1,19 @@
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+
+.h2o-stars{
+  display: flex;
+  align-items: center;
+  grid-gap: 4px;
+
+  &__icon{
+    display: flex;  
+  }
+}

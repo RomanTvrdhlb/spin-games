@@ -1,0 +1,87 @@
+.h2o-game-card {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  position: relative;
+  padding: 2px;
+  transition: box-shadow .2s;
+
+  &:hover{
+    box-shadow: 0 0 10px 6px #650dbc;
+    border-radius: 3px;
+    background:  rgba(var(--bg-e),1.0);
+    
+
+    .h2o-game-card__bottom{
+        display: none;
+    }
+
+    .h2o-yellow-btn{
+        display: flex;
+    }
+
+    .h2o-game-card__wrapp{
+        display: flex;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    img,
+    picture {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .h2o-yellow-btn {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__bottom {
+    cursor: default;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    grid-gap: 5px;
+    z-index: 3;
+    background-color: rgba(var(--bg-c), 1);
+    padding: clamp(10px, 1.6411vw, 15px) clamp(10px, 1.5317vw, 14px)
+      clamp(8px, 0.8125rem, 13px);
+  }
+
+  &__wrapp {
+    display: none;
+    cursor: default;
+    width: 100%;
+    flex-direction: column;
+    grid-gap: 5px;
+    z-index: 3;
+    background-color:  rgba(var(--bg-e),1.0);
+    padding: clamp(10px, 1.6411vw, 15px) clamp(10px, 1.5317vw, 14px)
+      clamp(8px, 0.8125rem, 13px);
+  }
+
+  &__title {
+    color: rgba(var(--cl-a), 1);
+    font-family: var(--font-family);
+    font-size: clamp(14px, 1.6411vw, 15px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149.333%;
+    text-transform: uppercase;
+    text-shadow: 0 2px 1px #030303, 1px 0 1px hsla(0,0%,100%,.5), -1px 0 1px hsla(0,0%,100%,.5);
+
+    &--mode{
+        color: rgba(var(--cl-b),1.0);
+        text-shadow: 0 1px 1px #030303;
+    }
+  }
+}
