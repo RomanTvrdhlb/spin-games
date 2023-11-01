@@ -1,0 +1,30 @@
+.h2o-main-jackpot{
+    width: 315px;
+    display: flex;
+    justify-content: center;
+
+
+    &__image{
+        position: relative;
+        &::before,&::after{
+            position: absolute;
+            top: 50%;
+            background: url(../img/index/line-left.png) 100% no-repeat;
+            content: "";
+            display: block;
+            height: 17px;
+            width: 76px;
+        }
+
+        &::before{
+            right: -35px;
+            transform: translate(50%, -50%);
+        }
+
+        &::after{
+            left: -35px;
+            transform: translate(50%, 50%);
+            rotate: 180deg;
+        }
+    }
+}

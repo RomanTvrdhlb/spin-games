@@ -1,0 +1,32 @@
+.h2o-main-info{
+
+
+
+    display: flex;
+    grid-gap: 10px;
+
+    &__image{
+        position: relative;
+
+        &::before,&::after{
+            position: absolute;
+            top: 50%;
+            background: url(../img/index/head-line.png) 100% no-repeat;
+            content: "";
+            display: block;
+            height: 17px;
+            width: 43px;
+        }
+
+        &::before{
+           right: -7px;
+           transform: translate(50%, -70%);
+        }
+
+        &::after{
+            left: -12px;
+            transform: translate(50%, 70%);
+            rotate: 180deg;
+        }
+    }
+}
