@@ -8,7 +8,7 @@
   &::after {
     position: absolute;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 3px;
     content: "";
@@ -78,16 +78,18 @@
     line-height: normal;
     text-transform: capitalize;
     z-index: 1;
-
+    overflow: hidden;
 
     .h2o-icon-glow{
         animation: glowing 3s ease infinite;
         bottom: 2px;
         position: absolute;
         z-index: -1;
+        border-radius: 5px;
     }
 
     i{
+      pointer-events: none;
         display: flex;
     }
 
@@ -143,13 +145,23 @@
 
       &:hover{
         color: rgba(var(--cl-e),1.0);
+        
         .h2o-icon-bg{
-            top: 10px;
-            background-image: url(../img/index/btn-hover.png);
+            transform: scale(1.01);
+            filter: brightness(1.2);
+        }
+        &::before{
+            opacity: 0;
         }
 
         i{
             filter: initial;
+        }
+    }
+
+    &.active{
+        &::before{
+            opacity: 0;
         }
     }
     }

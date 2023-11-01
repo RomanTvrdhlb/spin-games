@@ -1,0 +1,10 @@
+.h2o-promo-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: clamp(15px, 2.1882vw, 20px);
+    width: 100%;
+    
+    @include small-tablet{
+        grid-template-columns: 1fr;
+    }
+}

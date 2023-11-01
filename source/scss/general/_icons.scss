@@ -295,3 +295,21 @@
     height: 98%;
     width: 99%;
   }
+
+  .h2o-icon-cup {
+    background-image: url(../img/index/sprite/cup.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px;
+    height: 20px;
+  }
+
+  .h2o-icon-lift{
+    background-image: url(../img/index/scroller-btn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &:hover{
+      background-image: url(../img/index/scroller-btn_h.png);
+    }
+  }

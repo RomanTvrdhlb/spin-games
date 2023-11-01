@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 14" width="111" height="14">
+	<title>wazdan-svg</title>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m11.2 13.2l-11-11c-0.4-0.5-0.1-1.2 0.5-1.2h11c0.4 0 0.7 0.3 0.7 0.7v11c0 0.6-0.7 0.9-1.2 0.5zm2.5-0.5v-11c0-0.4 0.4-0.7 0.7-0.7h11.1c0.6 0 0.9 0.7 0.4 1.1l-11 11.1c-0.4 0.4-1.2 0.1-1.2-0.5zm13.6 0v-11c0-0.4 0.3-0.7 0.7-0.7h11c0.6 0 0.9 0.7 0.5 1.1l-11.1 11.1c-0.4 0.4-1.1 0.1-1.1-0.5z"/>
+	<path id="Layer" class="s0" d="m54.9 1v7.6l-2.7-5.4h-1.5l-2.7 5.5v-7.7h-2.4v12.4h2.3l3.5-6.8 3.5 6.8h2.3v-12.4z"/>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m69.4 13.4h-2.7l-0.7-2.4h-4.2l-0.7 2.4h-2.7l4.3-12.4h2.4zm-4.1-4.4l-1.4-4.4-1.4 4.4z"/>
+	<path id="Layer" class="s0" d="m69.9 1v2.2h5l-5 8.5v1.7h8.4v-2.1h-5.2l5-8.6v-1.7z"/>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m89.1 6.4v1.6c0 4-2 5.4-4.8 5.4h-4.4v-12.4h4.4c2.8 0 4.8 1.5 4.8 5.4zm-2.5 0c0-2.2-0.6-3.3-2.3-3.3h-1.9v8.1h1.9c1.7 0.1 2.3-1.1 2.3-3.2z"/>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m100.5 13.4h-2.7l-0.8-2.4h-4.1l-0.7 2.4h-2.7l4.3-12.4h2.4zm-4.1-4.4l-1.4-4.4-1.4 4.4z"/>
+	<path id="Layer" class="s0" d="m108.6 1v7.8l-4.8-7.8h-2.1v12.4h2.4v-7.7l4.8 7.7h2.1v-12.4z"/>
+</svg>

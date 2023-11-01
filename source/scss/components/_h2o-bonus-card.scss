@@ -1,0 +1,48 @@
+.h2o-bonus-card{
+    padding: clamp(20px, 3.2823vw, 30px) 0;
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    grid-gap: 16px 30px;
+    &__image{
+        grid-row: 1/ span 3;
+        grid-column: 1;
+    }
+
+    &__title{
+        color: rgba(var(--cl-a),1.0);
+        font-size: clamp(18px, 2.2976vw, 21px);
+        line-height: 100%; 
+        font-weight: bold;
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    p{
+        color: rgba(var(--cl-a),1.0);
+        font-size: clamp(14px, 1.6411vw, 15px);
+        font-weight: 400;
+        line-height: 120%; 
+        font-family: var(--font-family2);
+    }
+
+    &__button{
+        justify-self: end;
+    }
+
+    &--mode{
+        grid-template-columns: 45% 1fr auto;
+
+        .h2o-bonus-card{
+            &__title{
+                grid-column: 2 / span 2;
+            }
+        }
+        p{
+            grid-column: 2 / span 2;
+        }
+
+        .h2o-orange-button{
+            margin-right: -14px;
+        }
+    }
+}

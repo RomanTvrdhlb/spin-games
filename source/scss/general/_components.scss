@@ -1,29 +1,22 @@
 // ----------------- MAIN COMPONENTS -----------------
-
-// @import "components/main-top.scss";
-
+@import "components/h2o-game-card.scss";
+@import "components/h2o-bonus-card.scss";
+@import "components/h2o-promo-card.scss";
 // ----------------- MAIN COMPONENTS -----------------
 
 // ----------------- BLOCK COMPONENTS -----------------
-// @import "components/balance-slider.scss";
-@import "components/h2o-game-card.scss";
-@import "components/h2o-games-list.scss";
 @import "components/h2o-tabs-content.scss";
 @import "components/h2o-tabs-nav.scss";
-@import "components/h2o-footer-info.scss";
-@import "components/h2o-footer-payments.scss";
-
-
-
 
 // ----------------- BLOCK COMPONENTS -----------------
 
 // ----------------- GRID COMPONENTS -----------------
-// @import "components/question-list.scss";
-
-
+@import "components/h2o-games-list.scss";
+@import "components/h2o-bonus-list.scss";
+@import "components/h2o-promo-list.scss";
+@import "components/h2o-footer-info.scss";
+@import "components/h2o-footer-payments.scss";
 
 // ----------------- GRID COMPONENTS -----------------
 
-// @import "components/main-nav.scss";
 
