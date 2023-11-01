@@ -16,6 +16,11 @@
         display: none;
     }
 
+    .h2o-icon-play{
+      opacity: 1;
+      pointer-events: all;
+    }
+
     .h2o-yellow-btn{
         display: flex;
     }
@@ -27,6 +32,7 @@
 
   &__picture {
     display: flex;
+    position: relative;
     height: 100%;
     width: 100%;
     img,
@@ -43,6 +49,23 @@
     bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .h2o-icon-play{
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    transition: all .2s;
+    pointer-events: none;
+    opacity: 0;
+
+    &:hover{
+      transform: translate(-50%, -50%) scale(1.1);
+    }
   }
 
   &__bottom {

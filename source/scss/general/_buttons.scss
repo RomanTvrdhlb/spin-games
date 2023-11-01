@@ -21,6 +21,53 @@
   &:hover {
     box-shadow: inset 0 0 10px 2px #e6f1bb;
   }
+
+  &--mode{
+    background: linear-gradient(180deg,#c6e66a 9%,#547a01 80%);
+    box-shadow: 0 10px 0 0 #1a2601;
+    color: #1c1c1c;
+    font-size: clamp(16px, 2.6258vw, 24px);
+    font-style: italic;
+    height: 70px;
+    line-height: 98%;  
+    text-align: center;
+    text-shadow: 1px 0 0 rgba(0,0,0,.5), -1px 0 0 rgba(0,0,0,.2), 0 1px 1px hsla(0,0%,100%,.4);
+    width: 300px;
+
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+    text-transform: none;
+
+    @include small-tablet{
+      width: initial;
+      height: initial;
+      padding: 23px 74px;
+    }
+
+    &::before, &:after{
+      content: "";
+      display: block;
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    &::before{
+      background: linear-gradient(90deg,#c6e66a 0,#fff 40%,#fff 60%,#fff 0,#c6e66a);
+      top: 0;
+    }
+
+    &:after{
+      background: linear-gradient(90deg,#517c01 0,#fff 40%,#fff 60%,#fff 0,#517c01);
+      bottom: 0;
+    }
+
+    &:hover{
+      box-shadow: 0 10px 0 0 #1a2601, inset 0 0 20px 2px #e6f1bb;
+    }
+  }
 }
 
 .h2o-blue-button {

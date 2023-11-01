@@ -1,0 +1,197 @@
+.h2o-main-slider{
+        
+
+    &__box{
+        padding: 33px 33px 20px;
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 25px;
+        align-items: center;
+        height: 100%;
+
+        &--mode{
+            align-items: flex-start;
+
+            .h2o-main-slider__inner{
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 15px;
+        height: 100%;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    &__subtitle{
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        font-family: var(--font-family);
+        font-size: clamp(24px, 3.5011vw, 32px);
+        font-style: italic;
+        font-weight: 700;
+        text-align: center!important;
+        text-shadow: 1px 1px 10px #000, 1px -1px 10px #000, -1px 1px 10px #000, -1px -1px 10px #000, -1px -1px 1px hsla(0,0%,100%,.2), 1px 1px 1px hsla(0,0%,100%,.2), -1px 1px 1px hsla(0,0%,100%,.2), 1px -1px 1px hsla(0,0%,100%,.2);
+
+        b{
+            font-size: clamp(60px, 9.1904vw, 84px);
+        }
+
+        span{
+
+            i{
+                font-size: 58px;
+            }
+        }
+
+        &--mode{
+            font-size: clamp(16px, 2.1882vw, 20px);
+            grid-gap: 5px;
+            b{
+                padding-bottom: 5px;
+                font-size: clamp(24px, 3.9387vw, 36px);
+            }
+
+            i{
+                font-size: clamp(36px, 5.4705vw, 50px);
+            }
+        }
+
+    }
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        font-family: var(--font-family);
+        font-size: clamp(28px, 4.0481vw, 37px);
+        font-style: italic;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: center!important;
+        text-shadow: 1px 1px 10px #000, 1px -1px 10px #000, -1px 1px 10px #000, -1px -1px 10px #000, -1px -1px 1px hsla(0,0%,100%,.2), 1px 1px 1px hsla(0,0%,100%,.2), -1px 1px 1px hsla(0,0%,100%,.2), 1px -1px 1px hsla(0,0%,100%,.2);
+        opacity: 0;
+        b{
+            font-size: clamp(40px, 4.3764vw, 60px);
+        }
+
+        &--mode{
+            grid-gap: 5px;
+            font-size: clamp(24px, 3.8293vw, 35px);
+
+            b{
+                font-size: clamp(36px, 5.4705vw, 50px);  
+            }
+        }
+
+        &--big{
+            font-size: clamp(22px, 3.5011vw, 32px);
+
+            b{
+                font-size: clamp(30px, 4.3764vw, 40px);  
+            }
+        }
+
+        
+    }
+  
+    &__slide{
+        position: relative;
+        height: clamp(250px, 33.2604vw, 304px);
+
+        &.is-active{
+            .h2o-main-slider{
+            &__title{
+                animation: toTop .4s ease-in-out 1s both;
+            }
+
+            &__subtitle{
+                animation: toTop .4s ease-in-out 1s both;
+            }
+        }
+        }
+    }
+    &__image{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        img,picture{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &--mode{
+            width: inherit;
+            left: 10px;
+        }
+    }
+}
+
+.splide__pagination{
+    justify-content: flex-end;
+    padding-right: 33px;
+    &__page{
+        background: #974ad1;
+        border-radius: 50%;
+        display: flex;
+        height: 10px;
+        position: relative;
+        width: 10px;
+        opacity: 1;
+        transition: all .2s;
+        
+    &::before{
+        background: #320253;
+        border-radius: 50%;
+        content: "";
+        height: 8px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        transition: all .2s;
+    }
+
+    &.is-active{
+        background: #fcf600;
+        height: 11px;
+        transform: scale(1.1);
+        position: relative;
+        
+        width: 11px;
+
+        &::before{
+            background: linear-gradient(180deg,#ffd000 0,#d87700);
+            height: 11px;
+            width: 11px;
+        }
+    }
+    }
+}
+
+
+
+@keyframes toTop {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+  }
+
+ 

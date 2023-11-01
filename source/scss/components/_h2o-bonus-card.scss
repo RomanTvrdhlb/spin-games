@@ -3,9 +3,26 @@
     display: grid;
     grid-template-columns: 45% 1fr;
     grid-gap: 16px 30px;
+
+    @include small-tablet{
+        grid-template-columns: 1fr;
+    }
+
     &__image{
         grid-row: 1/ span 3;
         grid-column: 1;
+
+        @include small-tablet{
+            grid-row: initial;
+            justify-self: center;
+        }
+
+        @include mobile{
+            width: 100%;
+            img,picture{
+                width: 100%;
+            }
+        }
     }
 
     &__title{
@@ -15,6 +32,10 @@
         font-weight: bold;
         font-family: var(--font-family);
         text-align: center;
+
+        @include small-tablet{
+            grid-row: 1/-1;
+        }
     }
 
     p{
@@ -23,26 +44,70 @@
         font-weight: 400;
         line-height: 120%; 
         font-family: var(--font-family2);
+
+        @include small-tablet{
+            text-align: center;
+        }
     }
 
     &__button{
         justify-self: end;
+
+        @include small-tablet{
+            justify-self: center;
+        }
     }
 
     &--mode{
+        padding-top: 0;
         grid-template-columns: 45% 1fr auto;
+
+        @include small-tablet{
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         .h2o-bonus-card{
             &__title{
                 grid-column: 2 / span 2;
+
+                @include small-tablet{
+                    grid-column: 1 / span 2;
+                }
+            }
+
+            &__image{
+                @include small-tablet{
+                    grid-column: 1 / span 2;
+                }
+            }
+
+            &__button{
+                @include mobile{
+                    width: 100%;
+                    
+                }
             }
         }
         p{
             grid-column: 2 / span 2;
+
+            @include small-tablet{
+                grid-column: 1 / span 2;
+            }
         }
 
         .h2o-orange-button{
             margin-right: -14px;
+
+            @include small-tablet{
+                justify-self: end;
+            }
+        }
+
+        .h2o-grey-button{
+            @include small-tablet{
+                justify-self: start;
+            }
         }
     }
 }
