@@ -16,7 +16,7 @@
 
     @include mobile{
         grid-template-columns: 1fr auto;
-        height: 100%;
+        height: fit-content;
 
         .h2o-main-search{
             margin: 10px 0;

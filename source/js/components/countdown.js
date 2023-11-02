@@ -1,13 +1,11 @@
-const countDownDate = new Date("dec 10, 2023 23:37:25").getTime();
 const items = document.querySelectorAll('.h2o-timer');
 
-function formatedValue(value, countValue) {
-    return value < countValue ? '0' + value : '' + value
-}
-
-items.forEach(function(item){  
+items && items.forEach(function(item){  
+  const itemDate = item.getAttribute('data-time');
+  const countDownDate = new Date(itemDate).getTime();
+  
   const x = setInterval(function() {
-
+    
     const now = new Date().getTime();
     const distance = countDownDate - now;
   
@@ -26,3 +24,6 @@ items.forEach(function(item){
   }, 1000);
 })
 
+function formatedValue(value, countValue) {
+  return value < countValue ? '0' + value : '' + value
+}
