@@ -1,0 +1,26 @@
+.h2o-first-section{
+    position: relative;
+    padding-bottom: 5px;
+
+    @include small-tablet{
+        padding-bottom: 0;
+    }
+    &::before, &::after{
+        content: "";
+        height: 2px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        background: url(../img/index/line_bottom.png) 50% no-repeat;
+    }
+
+    &::before{
+        top: 0;
+    }
+
+    &::after{
+        bottom: 0;
+    }
+}

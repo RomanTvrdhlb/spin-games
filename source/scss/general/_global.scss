@@ -105,6 +105,14 @@ p {
   padding: 0;
 }
 
+p{
+  color: rgba(var(--cl-a),1.0);
+  font-family: var(--font-family);
+  font-size: clamp(14px, 1.6411vw, 15px);
+  line-height: 120%;
+  width: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;

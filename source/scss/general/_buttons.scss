@@ -68,6 +68,23 @@
       box-shadow: 0 10px 0 0 #1a2601, inset 0 0 20px 2px #e6f1bb;
     }
   }
+
+  &--play{
+    background: linear-gradient(180deg,#c1f440 0,#548003);
+    border-color: #bdfd00 #000 #466701;
+    border-width: 2px 0;
+    color: rgba(var(--cl-k),1.0);
+    font-family: var(--font-family);
+    font-size: 14px;
+    padding: 10px;
+    box-shadow: none;
+    width: 150px;
+    
+    &:hover{
+      box-shadow: none;
+      background: linear-gradient(180deg,#bdfd00 0,#73bc00 50%,#256900);
+    }
+  }
 }
 
 .h2o-blue-button {
@@ -93,6 +110,29 @@
     box-shadow: inset 0 0 15px 5px #33bcfe;
   }
 }
+
+.h2o-red-button{
+  background: linear-gradient(180deg,#c00000 0,#900000 44%,#6e0000);
+    border-color: #c00000 #000 #6e0000;
+    border-radius: 5px;
+    border-style: solid none;
+    border-width: 2px 0;
+    color: #fffdcd;
+    display: inline-block;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+
+    &:hover{
+      background: linear-gradient(180deg,#d30505 0,#cd0000);
+    
+    }
+}
+
 
 .h2o-yellow-btn{
   background: rgba(var(--bg-d),1.0);

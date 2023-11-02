@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="h2o-play-section">
+      <div class="h2o-container">
+        <div class="h2o-play-section__box">
+
+          <div class="h2o-play-card">
+            <h1 class="h2o-play-card__title">XTRA HOT</h1>
+            <div class="h2o-play-card__image">
+              <picture>
+                <source type='image/webp' srcset='img/index/spade.webp'>
+                <img width='178' height='159' src='img/index/spade.png' alt='image'>
+              </picture>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+              fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+              justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+              ac, enim.</p>
+            <div class="h2o-play-card__btns">
+              <button class="h2o-collect h2o-green-button h2o-green-button--play">Играть</button>
+              <a href="index.html" class="h2o-red-button">Назад</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+  <button class="h2o-lift h2o-icon-lift" id="upbutton">
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

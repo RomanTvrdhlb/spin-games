@@ -1,9 +1,9 @@
 import Splide from "../vendor/splide";
 const slider = document.querySelector('.splide');
 
-new Splide( slider, {
+slider && new Splide( slider, {
   type   : 'loop',
   perPage: 1,
   arrows: false,
-  // autoplay: true,
+  autoplay: true,
 } ).mount();

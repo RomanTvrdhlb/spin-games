@@ -92,7 +92,6 @@
         bottom: 2px;
         position: absolute;
         z-index: -1;
-        border-radius: 5px;
     }
 
     i{
@@ -140,7 +139,7 @@
     }
 
     &--mode {
-      color: rgba(var(--cl-e),1.0);
+      color: rgba(var(--cl-e),1.0) !important;
 
 
       .h2o-icon-bg{
@@ -169,6 +168,14 @@
     }
 
     &.active{
+      color: rgba(var(--cl-e),1.0);
+        
+      .h2o-icon-glow{
+        animation: none;
+      }
+      i{
+        filter: initial;
+    }
         &::before{
             opacity: 0;
         }
