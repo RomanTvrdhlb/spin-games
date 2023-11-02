@@ -16,5 +16,4 @@ if (document.getElementById('upbutton')) {
         window.scrollBy(0,document.documentElement.scrollTop * -1);
       };
     })
-  
    }

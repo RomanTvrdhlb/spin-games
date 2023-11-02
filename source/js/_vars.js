@@ -11,6 +11,8 @@ export default {
   links: document.querySelectorAll('.h2o-main-nav__link'),
   blocks: document.querySelectorAll('.h2o-products-block'),
   seacrhs: document.querySelectorAll('.h2o-main-search'),
+  items: document.querySelectorAll('.h2o-timer'),
+  slider: document.querySelector('.splide'),
 }
 
 

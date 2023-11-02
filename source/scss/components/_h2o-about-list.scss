@@ -1,20 +1,18 @@
-.h2o-about-list{
+.h2o-about-list {
+  display: flex;
+  grid-gap: 10px;
+  flex-wrap: wrap;
 
-display: flex;
-grid-gap: 10px;
-flex-wrap: wrap;
-
-&__item{
+  &__item {
     width: 45%;
 
-    @include mobile{
-        width: 100%;
+    @include mobile {
+      width: 100%;
     }
-}
+  }
 
-
-&__link{   
-    color: rgba(var(--cl-m),1.0);
+  &__link {
+    color: rgba(var(--cl-m), 1);
     font-family: var(--font-family);
     font-size: clamp(14px, 1.7505vw, 16px);
     line-height: 100%;
@@ -23,13 +21,11 @@ flex-wrap: wrap;
     display: flex;
     grid-gap: 5px;
 
-    i{
-        flex-shrink: 0;
-        display: flex;
-        width: 39px;
-        height: 29px;
+    i {
+      flex-shrink: 0;
+      display: flex;
+      width: 39px;
+      height: 29px;
     }
-}
-
-
+  }
 }

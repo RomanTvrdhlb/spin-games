@@ -3,7 +3,7 @@ import { enableScroll } from '../functions/enable-scroll';
 import vars from '../_vars';
 
 import {toggleClassInArray, toggleCustomClass, removeCustomClass, removeClassInArray} from '../functions/customFunctions';
-const {overlay, burger, mobileMenu, links, header} = vars;
+const {overlay, burger, mobileMenu} = vars;
 
 
 const mobileMenuHandler = function(overlay, mobileMenu, burger) {

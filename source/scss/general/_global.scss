@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   width: 100%;
-  // overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -29,7 +28,6 @@ body {
 
 main {
   padding-top: var(--header-height);
-  // transition: padding-top .3s ease-in-out;
   min-width: 0 !important;
 
   &.no-padding {
@@ -132,17 +130,6 @@ input {
   }
 }
 
-.just-validate-error-label{
-  position: absolute;
-  bottom: -0.6875rem;
-  left: clamp(10px, 1.367vw, 0.875rem);
-  color: rgba(var(--cl-o),1.0) !important;
-
-  @include small-tablet{
-    font-size: .625rem !important;
-  }
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   margin: 0;
@@ -161,23 +148,6 @@ input[type="number"] {
   appearance: textfield;
 }
 
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-
-  white-space: nowrap;
-
-  border: 0;
-
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-}
-
 .h2o-container {
   position: relative;
 
@@ -189,17 +159,6 @@ input[type="number"] {
   &--mode{
     max-width: var(--container-width--mode);
   }
-}
-
-.panel,
-[data-calendar="calendar"],
-[data-content] {
-  z-index: 20;
-
-  max-height: 0;
-  overflow: hidden;
-
-  transition: max-height 0.2s;
 }
 
 [data-tab-content] {
@@ -266,36 +225,3 @@ fieldset {
   border: none;
 }
 
-[data-btn-modal] {
-  svg {
-    pointer-events: none;
-  }
-}
-
-.modal {
-  position: absolute;
-  left: 50%;
-
-  transform: translate(-50%,-100vh) scale(0);
-  visibility: hidden;
-  opacity: 0;
-
-  transition: all 1s;
-  transition-delay: 0;
-
-  &.active {
-    position: relative;
-    z-index: 20;
-    transform: translate(-50%,0) scale(1);
-    visibility: visible;
-    opacity: 1;
-
-    transition: all 1s;
-
-    pointer-events: initial;
-  }
-
-  .close svg {
-    pointer-events: none;
-  }
-}

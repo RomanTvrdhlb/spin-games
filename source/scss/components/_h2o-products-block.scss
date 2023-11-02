@@ -21,9 +21,6 @@
         padding: 0 4px;
         position: relative;
 
-        @include mobile{
-            // padding-top: 10px;
-        }
 
         &::after{
             transition: all .2s;
@@ -137,8 +134,8 @@
         text-transform: capitalize;
 
         &:hover{
-            background-color: #30154b;
-            border: 1px solid #543354;
+            background-color: rgba(var(--bg-n),1.0);
+            border: 1px solid var(--br-i);
             height: auto;
             height: 35px;
             margin-left: -7px;

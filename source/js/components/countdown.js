@@ -1,4 +1,5 @@
-const items = document.querySelectorAll('.h2o-timer');
+import vars from '../_vars';
+const {items} = vars;
 
 items && items.forEach(function(item){  
   const itemDate = item.getAttribute('data-time');

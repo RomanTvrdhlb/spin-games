@@ -1,43 +1,43 @@
 .h2o-header {
-  background: rgba(var(--bg-b),1.0);
+  background: rgba(var(--bg-b), 1);
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   grid-gap: 30px;
 
-
-  &__btns{
+  &__btns {
     display: flex;
     align-items: center;
     grid-gap: 10px;
 
-    @include small-tablet{
+    @include small-tablet {
       display: none;
     }
   }
 
-  .h2o-green-button{
+  .h2o-green-button {
     width: 180px;
     height: 40px;
     font-family: var(--font-family3);
-    i{
+    i {
       margin-top: -2px;
     }
   }
 
-  .h2o-blue-button{
+  .h2o-blue-button {
     width: 119px;
     height: 40px;
     font-family: var(--font-family3);
   }
 }
 
-.h2o-logo{
+.h2o-logo {
   width: clamp(183px, 29.8687vw, 273px);
   height: clamp(49px, 7.9869vw, 73px);
 
-  img,picture{
+  img,
+  picture {
     width: 100%;
     height: 100%;
     object-fit: cover;
