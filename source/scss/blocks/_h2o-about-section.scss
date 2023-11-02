@@ -1,0 +1,23 @@
+.h2o-about-section{
+    padding: 10px 0 30px;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 16px;
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 3.2823vw, 30px);
+        padding-bottom: 14px;
+    }
+
+
+    &__image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

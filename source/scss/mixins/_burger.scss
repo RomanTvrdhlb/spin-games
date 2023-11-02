@@ -64,7 +64,7 @@
     &::after {
       top: 50%;
       width: calc(100% - 8px);
-      transform: rotate(-45deg) translate(5%, -70%);
+      transform: rotate(-45deg) translate(5%, -80%);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
 

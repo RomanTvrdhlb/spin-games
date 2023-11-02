@@ -6,7 +6,8 @@
 
 
   @include small-tablet{
-    overflow: auto;
+    overflow: hidden;
+    overflow-x: auto;
     width: calc(100% + 15px);
   }
 

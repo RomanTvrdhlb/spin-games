@@ -40,13 +40,25 @@
   visibility: hidden;
   z-index: 40;
 
-
-
-  &.show{
+  &.show {
     visibility: visible;
     pointer-events: all;
     opacity: 1;
   }
+
+  @include small-tablet{
+    bottom: 5%;
+    right: 3%;
+  }
+}
+
+.h2o-main-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(var(--cl-a),1.0);
+  font-size: clamp(18px, 2.2976vw, 21px);
+  text-align: center;
 }
 
 .h2o-price {
@@ -146,4 +158,43 @@
   display: flex;
   align-items: center;
   grid-gap: clamp(10px, 2.1882vw, 20px);
+}
+
+.h2o-main-subtitle{
+  display: inline-flex;
+  grid-gap: 5px;
+  color: rgba(var(--cl-l),1.0);
+  font-size: clamp(18px, 2.1882vw, 20px);
+  font-weight: 700;
+  font-family: var(--font-family);
+  line-height: normal;
+
+  i {
+    display: block;
+    margin-top: -6px;
+    margin-right: 5px;
+  }
+}
+
+.h2o-violet-text{
+  color: rgba(var(--cl-l),1.0);
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.h2o-main-link{
+  font-family: var(--font-family3);
+  color: rgba(var(--cl-l),1.0);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  transition: all .2s;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: transparent;
+
+  &:hover{
+    text-decoration-color: rgba(var(--cl-l),1.0);
+  }
 }
