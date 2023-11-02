@@ -1,5 +1,5 @@
 // import './components/accordions';
-// import './components/burger';
+import './components/burger';
 import './components/tabs';
 import './components/countdown';
 import './components/toTop';

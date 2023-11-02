@@ -11,6 +11,10 @@
     display: flex;
     align-items: center;
     grid-gap: 10px;
+
+    @include small-tablet{
+      display: none;
+    }
   }
 
   .h2o-green-button{
@@ -30,8 +34,8 @@
 }
 
 .h2o-logo{
-  width: Min(29.8687vw, 273px);
-  height: Min(7.9869vw, 73px);
+  width: clamp(183px, 29.8687vw, 273px);
+  height: clamp(49px, 7.9869vw, 73px);
 
   img,picture{
     width: 100%;

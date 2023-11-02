@@ -111,3 +111,27 @@
     
   }
 }
+
+.h2o-counter{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-height: 45px;
+  overflow: hidden;
+  grid-gap: 2px;
+
+  &__text{
+    color: rgba(var(--cl-i),1.0);
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    top: 10px;
+  }
+}
+
+.h2o-payout{
+  display: flex;
+  align-items: center;
+  grid-gap: clamp(10px, 2.1882vw, 20px);
+}

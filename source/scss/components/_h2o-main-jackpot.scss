@@ -1,11 +1,20 @@
 .h2o-main-jackpot{
     width: 315px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: clamp(10px, 2.1882vw, 20px);
 
+    &__box{
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(10px, 2.1882vw, 20px);
+    }
 
     &__image{
         position: relative;
+        width: clamp(133px, 20.0219vw, 183px);
+        height: clamp(35px, 4.9234vw, 45px);
         &::before,&::after{
             position: absolute;
             top: 50%;
@@ -25,6 +34,37 @@
             left: -35px;
             transform: translate(50%, 50%);
             rotate: 180deg;
+        }
+
+        b{
+            box-shadow: 0 2px 0 0 #532801;
+            color: rgba(var(--cl-j),1.0);
+            display: block;
+            font-size: clamp(12px, 1.5317vw, 14px);
+            font-weight: 700;
+            height: clamp(13px, 1.6411vw, 15px);
+            line-height: 16px;
+            position: absolute;
+            right: -10px;
+            text-align: center;
+            top: 3px;
+            width: clamp(12px, 1.5317vw, 14px);
+            border-radius: 2px;
+            background: linear-gradient(180deg,#ffe703 0,#e08d01);
+
+            &:hover{
+                box-shadow: 0 1px 0 0 #532801;
+                top: 4px;
+            }
+
+            @include small-tablet{
+                right: -14px;
+            }
+
+            @include mobile{
+                top: 1px;
+                
+            }
         }
     }
 }

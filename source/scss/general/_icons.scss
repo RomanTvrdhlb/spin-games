@@ -566,3 +566,73 @@
     width: 25px;
     height: 25px;
   }
+
+  .h2o-icon-peak {
+    background-image: url(../img/sprite/peak.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50px;
+    height: 52px;
+    display: block;
+
+    @include mobile{
+      width: 30px;
+      height: 32px;
+    }
+  }
+
+  .h2o-icon-currency {
+    background-image: url(../img/sprite/currency.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0px;
+    width: 30px;
+    height: 35px;
+    display: block;
+  }
+
+  .h2o-icon-number {
+    background-image: url(../img/sprite/numbers.svg);
+    width: 24px;
+    height: 40px;
+    display: block;
+    transition: all 5s ease 0s;
+    background-position-y: 0px;
+
+    &--one{
+      background-position-y: -40px;
+    }
+
+    &--two{
+      background-position-y: -80px;
+    }
+
+    &--three{
+      background-position-y: -121px;
+    }
+
+    &--four{
+      background-position-y: -161px;
+    }
+
+    &--five{
+      background-position-y: -200px;
+    }
+
+    &--six{
+      background-position-y: -242px;
+    }
+
+    &--seven{
+      background-position-y: -281px;
+    }
+
+    &--eight{
+      background-position-y: -320px;
+    }
+
+    &--nine{
+      background-position-y: 39px;
+    }
+  }
